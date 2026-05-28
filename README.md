@@ -14,6 +14,10 @@ A three-stage workflow for software development. Each stage produces an artifact
 
 Each stage stops if the previous stage's open questions are still unanswered — guesses propagate.
 
+### `update-spec` / `update-plan`
+
+Maintenance counterparts to the create- skills. Use these when answering open questions, revising scope, or incorporating deviations surfaced by downstream stages. Both do clean overwrites — no revision log in the file — and cascade a `STALE` flag to the downstream artifact so the next stage knows to re-examine before proceeding.
+
 ### `frontend-design`
 
 Anthropic's frontend-design skill. Used as-is.
