@@ -28,6 +28,9 @@ This skill **is not** the place to re-litigate design decisions. The plan alread
 
 ### 1. Read the plan, fully
 
+First, check the status line in the header. If it says STALE — upstream spec was updated, the spec changed after the plan was written and the plan may be out of date. Stop. Tell the user: "The plan is marked stale because the spec was updated after it was written. Run update-plan first, or confirm you want me to proceed against the current plan anyway." Wait for the user's explicit instruction before continuing.
+If the status line is DRAFT or READY, proceed.
+
 Open `.plans/plan.md` and read it end to end before touching any code. Specifically internalize:
 
 - **The answers to the plan's open questions** — these are constraints on the implementation.
